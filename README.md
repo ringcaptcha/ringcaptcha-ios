@@ -14,9 +14,8 @@ This guide will help you through the setup of Ringcaptcha on your website or mob
 Register a new application to match the app name that the widget will be placed on. The embed code, with a unique site key, will be created for you.
 
 ```
-#!javascript
-<script type='text/javascript' charset='UTF-8' src='http(s)://api.ringcaptcha.com/XXXXXXXXX/widget'></script>
-
+#!objective-c
+[Ringcaptcha verifyPhoneNumberWithAppKey:@"XXXXXXXXXX" andSecretKey:@"YYYYYYYYYY" delegate: self];
 ```
 
 ## Installing your widget on your website
