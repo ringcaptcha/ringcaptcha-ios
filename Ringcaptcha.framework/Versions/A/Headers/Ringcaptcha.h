@@ -12,6 +12,18 @@
 
 #import "RingcaptchaVerification.h"
 
+@protocol RingcaptchaDelegate <NSObject>
+
+@required
+
+- (void) didFinishPhoneNumberVerification: (RingcaptchaVerification*) verification;
+
+@optional
+
+- (void) didFinishPhoneNumberVerificationWithCancel: (RingcaptchaVerification*) verification;
+
+@end
+
 @interface Ringcaptcha : NSObject {
 }
 
@@ -20,6 +32,6 @@
 //  withAppKey: ${app_key} delivered by Ringcaptcha upon registration
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
-+ (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey andSecretKey:(NSString *)secretKey delegate: (id) delegate;
++ (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey andSecretKey:(NSString *)secretKey delegate: (id<RingcaptchaDelegate>) delegate;
 
 @end
