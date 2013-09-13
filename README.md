@@ -1,69 +1,39 @@
-# Welcome to Ringcaptcha-iOS repository!
+# Using Ringcaptcha widget on your iOS App
 
-With the ringcaptcha-iOS library, we've simplified interaction with the Ringcaptcha verification REST API. No need to manually create URLS or parse XML/JSON. You now interact with resources directly.
+Register or Log-in to the [Ringcaptcha.com](http://ringcaptcha.com) site and create a new widget matching the application name it will be placed on. It is important that the name is exactly as shown on the Apple App Store for the widget to work correctly, any mistake can lead to unexpected errors. Select the default service to use for PIN code requests, and activate desired features. An embed code, with a unique app key, will be created for you automatically.
 
-This guide will help you through the setup of Ringcaptcha on your website or mobile application. Should you find any issues or would like to make any comments please do so in the [Issues](http://bitbucket.org/ringcaptcha/ringcaptcha-php/issues) tab. Thanks!
+## Import the signed library into your project
 
-## Supported platforms
+To embed the SDK just drag&drop or copy&paste the library provided to you by Ringcaptcha into your libs folder in your XCode project. In addition to that, in every target that the SDK will be included you must: link it to **CoreTelephony.framework** and include under "Build Settings", "Linking" -> "Other Linker Flags" the following value: "-ObjC -all_load".
 
-- iOS 6.0+
-- All others are work in progress
+> _Note: The library is compatible with iOS 4.3+ or greater. The widget UI is compatible with iOS 5.0+ or greater._
 
-## Creating a widget
+Launch a fully functional widget by calling the following code:
 
-Register a new application to match the app name that the widget will be placed on. The embed code, with a unique site key, will be created for you.
+	#!objective-c
+	#import <Ringcaptcha/Ringcaptcha.h>
+	[Ringcaptcha verifyPhoneNumberWithAppKey:@"APP_KEY" andSecretKey:@"SECRET_KEY" delegate: self];
 
-```
-#!objective-c
-[Ringcaptcha verifyPhoneNumberWithAppKey:@"XXXXXXXXXX" andSecretKey:@"YYYYYYYYYY" delegate: self];
-```
+And implement the following delegate methods:
 
-## Installing your widget on your website
+	#!objective-c
+	- (void) didFinishPhoneNumberVerification: (RingcaptchaVerification*) verification;
+	- (void) didFinishPhoneNumberVerificationWithCancel: (RingcaptchaVerification*) verification;
 
+Or if you have access to the API directly, access the SDK directly with:
 
-1. Clone this repository on yours and add a reference to it in your php code.
+	#!objective-c
+	#import <RingcaptchaAPI/RingcaptchaAPI.h>
+	RingcaptchaAPI* controller = [[RingcaptchaAPI alloc] initWithAppKey:@”APP_KEY” andApiKey:@”API_KEY”];
+	[controller sendCaptchaCodeToNumber:@”PHONE_NUMBER” withService:SMS delegate:self];
+	[controller verifyCaptchaWithCode:@”PIN_CODE” delegate:self];
 
+And implement the following deleage methods:
 
-```
-#!bash
+	#!objective-c
+	- (void) didFinishCodeRequest: (RingcaptchaResponse*) rsp; 
+	- (void) didFinishCodeRequestWithError: (NSError*) err;
+	- (void) didFinishVerifyRequest: (RingcaptchaResponse*) rsp;
+	- (void) didFinishVerifyRequestWithError: (NSError*) err;
 
-git clone https://[user]@bitbucket.org/ringcaptcha/ringcaptcha-ios.git
-```
-
-2. Add `Ringcaptcha.framework` and `Ringcaptcha.bundle` to your xCode project. NOTE: Remember to copy it instead of adding the references directly unless you prefer otherwise
-
-3. Include in every target that will be using Ringcaptcha.framework the following:
-  - `CoreTelephony.framework` as a dependency lib
-  - In "Build Settings" tab, under "Linking" -> "Other Linker Flags" include: "-ObjC -all_load"
-
-4. In the ViewController that will be instantiating Ringcaptcha flow, call it using:
-
-```
-#!objective-c
-
-[Ringcaptcha verifyPhoneNumberWithAppKey:@"${APP_KEY}" andSecretKey:@"${SECRET_KEY}" delegate: self];
-
-```
-
-5. Implement the following callback methods on your controller
-
-```
-#!objective-c
-
-- (void) didFinishPhoneNumberVerification: (RingcaptchaVerification*) verification {
-  //Called whenever the phone number verification process ended (successfully or not)
-
-  [verification.verificationSuccessful] //Boolean value indicating whether the phone number has been verified successfully or not
-
-  [verification.verificationId] //Id identifying the verification process
-
-  [verification. phoneNumber] //String value representing verified phone number, correctly typed
-
-  [verification.errorDescription] //Error description in the event the verification is not successful
-
-}
-
-- (void) didFinishPhoneNumberVerificationWithCancel: (RingcaptchaVerification*) verification {
-}
-
-```
+That's it. Download the [SDK](https://bitbucket.org/ringcaptcha/ringcaptcha-ios/src) and you are ready to start verifying your community phone numbers!
