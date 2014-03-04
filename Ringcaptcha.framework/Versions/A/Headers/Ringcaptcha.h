@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 
 #import "RingcaptchaVerification.h"
+#import "RingcaptchaCountry.h"
 
 @protocol RingcaptchaDelegate <NSObject>
 
@@ -33,5 +34,8 @@
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
 + (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey andSecretKey:(NSString *)secretKey delegate: (id<RingcaptchaDelegate>) delegate;
+
+//  Returns all supported countries sorted by locale with isoCode, name and flag image
++ (NSMutableArray*) getSupportedCountries;
 
 @end
