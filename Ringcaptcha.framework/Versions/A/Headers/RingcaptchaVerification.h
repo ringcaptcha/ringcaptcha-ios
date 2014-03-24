@@ -11,7 +11,7 @@
 @interface RingcaptchaVerification : NSObject
 
 //Id identifying the verification process
-@property (nonatomic) NSInteger verificationId;
+@property (nonatomic) NSString* verificationId;
 
 //Boolean value indicating whether the phone number has been verified successfully or not
 @property (nonatomic) Boolean verificationSuccessful;
