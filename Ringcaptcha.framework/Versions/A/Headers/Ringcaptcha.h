@@ -25,6 +25,11 @@
 
 @end
 
+#pragma mark - Callback blocks definitions
+typedef void (^RingcaptchaSuccessBlock)(RingcaptchaVerification *verification);
+typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
+
+
 @interface Ringcaptcha : NSObject {
 }
 
@@ -34,6 +39,13 @@
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
 + (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey andSecretKey:(NSString *)secretKey delegate: (id<RingcaptchaDelegate>) delegate;
+
+//  With Blocks instead of Delegates
++ (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey
+                                            andSecretKey:(NSString *)secretKey
+                                        inViewController:(UIViewController *)viewController
+                                                 success:(RingcaptchaSuccessBlock)success
+                                                  cancel:(RingcaptchaCancelBlock)cancel;
 
 //  Returns all supported countries sorted by locale with isoCode, name and flag image
 + (NSMutableArray*) getSupportedCountries;

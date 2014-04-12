@@ -40,6 +40,7 @@
 #import "RingcaptchaAPIDelegate.h"
 
 typedef enum { SMS, VOICE } RingcaptchaService;
+typedef enum { RCDisplayNavigation, RCDisplayPresentation } RingcaptchaDisplayMode;
 
 /*
  * This interface represents Ringcaptcha API SDK implementation
