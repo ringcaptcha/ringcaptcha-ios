@@ -38,12 +38,10 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
 //  withAppKey: ${app_key} delivered by Ringcaptcha upon registration
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
-+ (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey andSecretKey:(NSString *)secretKey delegate: (id<RingcaptchaDelegate>) delegate;
-
-//  With Blocks instead of Delegates
 + (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey
                                             andSecretKey:(NSString *)secretKey
                                         inViewController:(UIViewController *)viewController
+                                                delegate: (id<RingcaptchaDelegate>) delegate
                                                  success:(RingcaptchaSuccessBlock)success
                                                   cancel:(RingcaptchaCancelBlock)cancel;
 
