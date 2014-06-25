@@ -66,6 +66,17 @@ typedef enum { RCDisplayNavigation, RCDisplayPresentation } RingcaptchaDisplayMo
 - (void) sendCaptchaCodeToNumber: (NSString*) phoneNumber withService: (RingcaptchaService) service delegate:(id<RingcaptchaAPIDelegate>) sender;
 
 /*
+ * This method checks the passcode submitted is valid for the token used to send it
+ * with the app key selected on the previous method.
+ *
+ * The secret key is used to ensure the entity who submitted the initial request is
+ * the same that attempts to verify
+ *
+ * The delegate will be called whenever the request is finished with or without error
+ */
+- (void) checkCode: (NSString *) code delegate: (id<RingcaptchaAPIDelegate>) sender;
+
+/*
  * This method verifies the passcode submitted is valid for the token used to send it
  * with the app key selected on the previous method.
  *

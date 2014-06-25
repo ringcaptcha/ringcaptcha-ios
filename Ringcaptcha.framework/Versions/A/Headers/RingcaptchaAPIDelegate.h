@@ -71,6 +71,27 @@
 
 /*
  * This method is called when the communication with the server API was
+ * established correctly and a response received from the server for checking the one-time
+ * code to the phone number requested via the communication method estipulated in the app key.
+ *
+ * RingcaptchaResponse object will be populated with the status data received from the server
+ * such as: status (e.g.: SUCCESS, ERROR), errorMessage (e.g.: ERROR_INVALID_PIN_CODE, etc) 
+ * and timeout (used when attempts have been blocked for X time)
+ */
+- (void) didFinishCheckRequest: (RingcaptchaResponse*) rsp;
+
+/*
+ * This method is called when there is a communication error with the server API for checking
+ * the one-time code to the phone number requested via the communication method estipulated in the
+ * app key and secret key/api key.
+ *
+ * NSError object will be populated with the NSLocalizedDescriptionKey and NSUnderlyingErrorKey
+ * with their corresponding exceptions user info and description.
+ */
+- (void) didFinishCheckRequestWithError: (NSError*) err;
+
+/*
+ * This method is called when the communication with the server API was
  * established correctly and a response received from the server for verifying the one-time
  * code to the phone number requested via the communication method estipulated in the app key.
  *
