@@ -14,7 +14,7 @@ Launch a fully functional widget by calling the following code:
 
 	#!objective-c
 	#import <Ringcaptcha/Ringcaptcha.h>
-	[Ringcaptcha verifyPhoneNumberWithAppKey:@"APP_KEY" andSecretKey:@"SECRET_KEY" inViewController:self delegate: self];
+	[Ringcaptcha verifyPhoneNumberWithAppKey:@"APP_KEY" andSecretKey:@"SECRET_KEY" inViewController:self delegate: self success:nil cancel:nil];
 
 And implement the following delegate methods:
 
