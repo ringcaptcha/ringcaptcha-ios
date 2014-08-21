@@ -37,7 +37,7 @@ Or use Success and Cancel blocks instead:
 If you have access to the API directly, access the SDK directly with:
 
 	#!objective-c
-	#import <RingcaptchaAPI/RingcaptchaAPI.h>
+	#import <Ringcaptcha/RingcaptchaAPI.h>
 	RingcaptchaAPI* controller = [[RingcaptchaAPI alloc] initWithAppKey:@”APP_KEY” andApiKey:@”API_KEY”];
 	[controller sendCaptchaCodeToNumber:@”PHONE_NUMBER” withService:SMS delegate:self];
 	[controller verifyCaptchaWithCode:@”PIN_CODE” delegate:self];
