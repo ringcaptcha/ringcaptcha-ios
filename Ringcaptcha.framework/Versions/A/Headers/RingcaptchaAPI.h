@@ -93,4 +93,7 @@ typedef enum { RCDisplayNavigation, RCDisplayPresentation } RingcaptchaDisplayMo
  */
 - (BOOL) isTokenActive;
 
+- (void) getOnboard: (NSString *) service delegate: (id<RingcaptchaAPIDelegate>) sender;
+
+
 @end

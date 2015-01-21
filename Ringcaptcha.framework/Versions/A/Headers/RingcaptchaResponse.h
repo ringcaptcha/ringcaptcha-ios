@@ -104,4 +104,10 @@
  */
 @property (nonatomic) NSDate* timeout;
 
+
+/** Current client features **/
+@property (strong, nonatomic) NSString* features;
+
+@property (strong, nonatomic) NSArray* numbers;
+
 @end

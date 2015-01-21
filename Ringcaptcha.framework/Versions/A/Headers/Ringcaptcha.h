@@ -4,6 +4,7 @@
 //
 //  Created by Martin Cocaro on 2/11/13.
 //  Copyright (c) 2013 Thrivecom LLC. All rights reserved.
+// @vrunoa
 //
 
 #import <Foundation/Foundation.h>
@@ -38,6 +39,14 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
 //  withAppKey: ${app_key} delivered by Ringcaptcha upon registration
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
+
++ (RingcaptchaVerification*) verifyOnboardWithAppKey:(NSString *)appKey
+                                            andSecretKey:(NSString *)secretKey
+                                        inViewController:(UIViewController *)viewController
+                                                delegate: (id<RingcaptchaDelegate>) delegate
+                                                 success:(RingcaptchaSuccessBlock)success
+                                                  cancel:(RingcaptchaCancelBlock)cancel;
+
 + (RingcaptchaVerification*) verifyPhoneNumberWithAppKey:(NSString *)appKey
                                             andSecretKey:(NSString *)secretKey
                                         inViewController:(UIViewController *)viewController
@@ -47,5 +56,7 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
 
 //  Returns all supported countries sorted by locale with isoCode, name and flag image
 + (NSMutableArray*) getSupportedCountries;
+
++ (void) clearTokens:(NSString *)appKey andSecretKey:(NSString *)secretKey;
 
 @end

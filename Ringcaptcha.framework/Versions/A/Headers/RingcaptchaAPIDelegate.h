@@ -114,4 +114,15 @@
 - (void) didFinishVerifyRequestWithError: (NSError*) err;
 
 
+/**
+ *
+ * Onboard callbacks
+ *
+ */
+- (void) didFinishOnBoardRequest: (RingcaptchaResponse* ) rsp;
+
+- (void) didFinishOnBoardRequestNew:(RingcaptchaResponse *)rsp;
+
+- (void) didFinishOnBoardRequestWithError: (NSError*) err;
+
 @end
