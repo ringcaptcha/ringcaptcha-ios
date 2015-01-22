@@ -93,7 +93,12 @@ typedef enum { RCDisplayNavigation, RCDisplayPresentation } RingcaptchaDisplayMo
  */
 - (BOOL) isTokenActive;
 
-- (void) getOnboard: (NSString *) service delegate: (id<RingcaptchaAPIDelegate>) sender;
+/*
+ * This method checks if this user received an SMS for onboard from your site
+ * 
+ * Note that the server will only accept requests from verified clients
+ */
+- (void) onboardDelegate: (id<RingcaptchaAPIDelegate>) sender;
 
 
 @end

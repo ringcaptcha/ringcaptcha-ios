@@ -113,16 +113,28 @@
  */
 - (void) didFinishVerifyRequestWithError: (NSError*) err;
 
-
-/**
+/*
+ * This method is called when the API successfully found open sessions for this device
  *
- * Onboard callbacks
- *
+ * NSError object will be populated with the NSLocalizedDescriptionKey and NSUnderlyingErrorKey
+ * with their corresponding exceptions user info and description.
  */
 - (void) didFinishOnBoardRequest: (RingcaptchaResponse* ) rsp;
 
+/*
+ * This method is called when the API could not find an open onboard session for this device
+ *
+ * NSError object will be populated with the NSLocalizedDescriptionKey and NSUnderlyingErrorKey
+ * with their corresponding exceptions user info and description.
+ */
 - (void) didFinishOnBoardRequestNew:(RingcaptchaResponse *)rsp;
 
+/*
+ * This method is called when there is a communication error with the server API for onboarding
+ *
+ * NSError object will be populated with the NSLocalizedDescriptionKey and NSUnderlyingErrorKey
+ * with their corresponding exceptions user info and description.
+ */
 - (void) didFinishOnBoardRequestWithError: (NSError*) err;
 
 @end

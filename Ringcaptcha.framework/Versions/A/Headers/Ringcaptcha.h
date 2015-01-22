@@ -13,6 +13,7 @@
 
 #import "RingcaptchaVerification.h"
 #import "RingcaptchaCountry.h"
+#import "RingcaptchaAPI.h"
 
 @protocol RingcaptchaDelegate <NSObject>
 
