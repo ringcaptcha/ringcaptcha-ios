@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EA9EAE1AA095E900115AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EA9EAD1AA095E900115AC5 /* main.m */; };
+		01EA9EB11AA095E900115AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EA9EB01AA095E900115AC5 /* AppDelegate.m */; };
+		01EA9EB41AA095E900115AC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EA9EB31AA095E900115AC5 /* ViewController.m */; };
+		01EA9EB71AA095E900115AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA9EB51AA095E900115AC5 /* Main.storyboard */; };
+		01EA9EB91AA095E900115AC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EA9EB81AA095E900115AC5 /* Images.xcassets */; };
+		01EA9EBC1AA095E900115AC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01EA9EBA1AA095E900115AC5 /* LaunchScreen.xib */; };
+		01EA9EC81AA095E900115AC5 /* ExampleRingcaptchaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EA9EC71AA095E900115AC5 /* ExampleRingcaptchaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01EA9EC21AA095E900115AC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EA9EA01AA095E800115AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EA9EA71AA095E800115AC5;
+			remoteInfo = ExampleRingcaptcha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01EA9EA81AA095E900115AC5 /* ExampleRingcaptcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleRingcaptcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EA9EAC1AA095E900115AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EA9EAD1AA095E900115AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01EA9EAF1AA095E900115AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01EA9EB01AA095E900115AC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01EA9EB21AA095E900115AC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		01EA9EB31AA095E900115AC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		01EA9EB61AA095E900115AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01EA9EB81AA095E900115AC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01EA9EBB1AA095E900115AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		01EA9EC11AA095E900115AC5 /* ExampleRingcaptchaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleRingcaptchaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EA9EC61AA095E900115AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EA9EC71AA095E900115AC5 /* ExampleRingcaptchaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleRingcaptchaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01EA9EA51AA095E800115AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EA9EBE1AA095E900115AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01EA9E9F1AA095E800115AC5 = {
+			isa = PBXGroup;
+			children = (
+				01EA9EAA1AA095E900115AC5 /* ExampleRingcaptcha */,
+				01EA9EC41AA095E900115AC5 /* ExampleRingcaptchaTests */,
+				01EA9EA91AA095E900115AC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01EA9EA91AA095E900115AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01EA9EA81AA095E900115AC5 /* ExampleRingcaptcha.app */,
+				01EA9EC11AA095E900115AC5 /* ExampleRingcaptchaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01EA9EAA1AA095E900115AC5 /* ExampleRingcaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				01EA9EAF1AA095E900115AC5 /* AppDelegate.h */,
+				01EA9EB01AA095E900115AC5 /* AppDelegate.m */,
+				01EA9EB21AA095E900115AC5 /* ViewController.h */,
+				01EA9EB31AA095E900115AC5 /* ViewController.m */,
+				01EA9EB51AA095E900115AC5 /* Main.storyboard */,
+				01EA9EB81AA095E900115AC5 /* Images.xcassets */,
+				01EA9EBA1AA095E900115AC5 /* LaunchScreen.xib */,
+				01EA9EAB1AA095E900115AC5 /* Supporting Files */,
+			);
+			path = ExampleRingcaptcha;
+			sourceTree = "<group>";
+		};
+		01EA9EAB1AA095E900115AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01EA9EAC1AA095E900115AC5 /* Info.plist */,
+				01EA9EAD1AA095E900115AC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01EA9EC41AA095E900115AC5 /* ExampleRingcaptchaTests */ = {
+			isa = PBXGroup;
+			children = (
+				01EA9EC71AA095E900115AC5 /* ExampleRingcaptchaTests.m */,
+				01EA9EC51AA095E900115AC5 /* Supporting Files */,
+			);
+			path = ExampleRingcaptchaTests;
+			sourceTree = "<group>";
+		};
+		01EA9EC51AA095E900115AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01EA9EC61AA095E900115AC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01EA9EA71AA095E800115AC5 /* ExampleRingcaptcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EA9ECB1AA095E900115AC5 /* Build configuration list for PBXNativeTarget "ExampleRingcaptcha" */;
+			buildPhases = (
+				01EA9EA41AA095E800115AC5 /* Sources */,
+				01EA9EA51AA095E800115AC5 /* Frameworks */,
+				01EA9EA61AA095E800115AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleRingcaptcha;
+			productName = ExampleRingcaptcha;
+			productReference = 01EA9EA81AA095E900115AC5 /* ExampleRingcaptcha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01EA9EC01AA095E900115AC5 /* ExampleRingcaptchaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EA9ECE1AA095E900115AC5 /* Build configuration list for PBXNativeTarget "ExampleRingcaptchaTests" */;
+			buildPhases = (
+				01EA9EBD1AA095E900115AC5 /* Sources */,
+				01EA9EBE1AA095E900115AC5 /* Frameworks */,
+				01EA9EBF1AA095E900115AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01EA9EC31AA095E900115AC5 /* PBXTargetDependency */,
+			);
+			name = ExampleRingcaptchaTests;
+			productName = ExampleRingcaptchaTests;
+			productReference = 01EA9EC11AA095E900115AC5 /* ExampleRingcaptchaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01EA9EA01AA095E800115AC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Thrivecom;
+				TargetAttributes = {
+					01EA9EA71AA095E800115AC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					01EA9EC01AA095E900115AC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 01EA9EA71AA095E800115AC5;
+					};
+				};
+			};
+			buildConfigurationList = 01EA9EA31AA095E800115AC5 /* Build configuration list for PBXProject "ExampleRingcaptcha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01EA9E9F1AA095E800115AC5;
+			productRefGroup = 01EA9EA91AA095E900115AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01EA9EA71AA095E800115AC5 /* ExampleRingcaptcha */,
+				01EA9EC01AA095E900115AC5 /* ExampleRingcaptchaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01EA9EA61AA095E800115AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EA9EB71AA095E900115AC5 /* Main.storyboard in Resources */,
+				01EA9EBC1AA095E900115AC5 /* LaunchScreen.xib in Resources */,
+				01EA9EB91AA095E900115AC5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EA9EBF1AA095E900115AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01EA9EA41AA095E800115AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EA9EB41AA095E900115AC5 /* ViewController.m in Sources */,
+				01EA9EB11AA095E900115AC5 /* AppDelegate.m in Sources */,
+				01EA9EAE1AA095E900115AC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01EA9EBD1AA095E900115AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EA9EC81AA095E900115AC5 /* ExampleRingcaptchaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01EA9EC31AA095E900115AC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EA9EA71AA095E800115AC5 /* ExampleRingcaptcha */;
+			targetProxy = 01EA9EC21AA095E900115AC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01EA9EB51AA095E900115AC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01EA9EB61AA095E900115AC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01EA9EBA1AA095E900115AC5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01EA9EBB1AA095E900115AC5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01EA9EC91AA095E900115AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01EA9ECA1AA095E900115AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01EA9ECC1AA095E900115AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleRingcaptcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01EA9ECD1AA095E900115AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleRingcaptcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		01EA9ECF1AA095E900115AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleRingcaptchaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleRingcaptcha.app/ExampleRingcaptcha";
+			};
+			name = Debug;
+		};
+		01EA9ED01AA095E900115AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleRingcaptchaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleRingcaptcha.app/ExampleRingcaptcha";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01EA9EA31AA095E800115AC5 /* Build configuration list for PBXProject "ExampleRingcaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EA9EC91AA095E900115AC5 /* Debug */,
+				01EA9ECA1AA095E900115AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EA9ECB1AA095E900115AC5 /* Build configuration list for PBXNativeTarget "ExampleRingcaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EA9ECC1AA095E900115AC5 /* Debug */,
+				01EA9ECD1AA095E900115AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01EA9ECE1AA095E900115AC5 /* Build configuration list for PBXNativeTarget "ExampleRingcaptchaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01EA9ECF1AA095E900115AC5 /* Debug */,
+				01EA9ED01AA095E900115AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01EA9EA01AA095E800115AC5 /* Project object */;
+}
