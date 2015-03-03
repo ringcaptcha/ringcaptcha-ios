@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>669F54F9-7E79-405A-8181-5AA97F1989AC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ExampleRingcaptcha</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26D83B1FA55ADCD202EF45D212B5CCB3E8048B20</key>
+		<string>https://github.com/ringcaptcha/ringcaptcha-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ExampleRingcaptcha/ExampleRingcaptcha.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26D83B1FA55ADCD202EF45D212B5CCB3E8048B20</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ringcaptcha/ringcaptcha-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>26D83B1FA55ADCD202EF45D212B5CCB3E8048B20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26D83B1FA55ADCD202EF45D212B5CCB3E8048B20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ringcaptcha-ios-github</string>
+		</dict>
+	</array>
+</dict>
+</plist>

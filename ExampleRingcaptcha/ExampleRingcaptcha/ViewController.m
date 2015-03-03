@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Ringcaptcha/Ringcaptcha.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (IBAction)verifyOnboard:(id)sender {
+    
+    [Ringcaptcha verifyOnboardWithAppKey:@"xxxxxxxxxxxx"
+                            andSecretKey:@"xxxxxxxxxxxx"
+                        inViewController:self
+                                delegate: nil
+                                 success:^(RingcaptchaVerification *verification) {
+                                     NSLog(@"Verification process ended successfully? %@", verification.verificationId);
+                                     NSLog(@"Verification process ended successfully? %d", verification.verificationSuccessful);
+                                     NSLog(@"Verification process ended successfully? %@", verification.phoneNumber);
+                                     NSLog(@"Verification process ended successfully? %@", verification.errorDescription);
+                                 } cancel:^(RingcaptchaVerification *verification) {
+                                     NSLog(@"Verification process cancelled? %d", verification.verificationSuccessful);
+                                 }];
 }
 
 - (void)didReceiveMemoryWarning {

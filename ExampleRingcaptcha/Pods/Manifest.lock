@@ -1,0 +1,10 @@
+PODS:
+  - Ringcaptcha (1.5)
+
+DEPENDENCIES:
+  - Ringcaptcha
+
+SPEC CHECKSUMS:
+  Ringcaptcha: 12013c27bbdb709c1cea256ba48824b752ef357c
+
+COCOAPODS: 0.36.0.rc.1
