@@ -6,5 +6,11 @@
 
 ## Getting Started
 
+CocoaPods
+
+```pod
+pod 'Ringcaptcha'
+```
+
 ## Learn More
 - Read the [iOS Guides](https://my.ringcaptcha.com/docs/ios)

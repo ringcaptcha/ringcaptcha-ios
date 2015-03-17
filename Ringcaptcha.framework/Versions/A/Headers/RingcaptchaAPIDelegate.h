@@ -137,4 +137,18 @@
  */
 - (void) didFinishOnBoardRequestWithError: (NSError*) err;
 
+
+- (void) didFinishCaptchaRequest: (RingcaptchaResponse*) rsp;
+
+/*
+ * This method is called when there is a communication error with the server API for sending
+ * the one-time code to the phone number requested via the communication method estipulated in the
+ * app key.
+ *
+ * NSError object will be populated with the NSLocalizedDescriptionKey and NSUnderlyingErrorKey
+ * with their corresponding exceptions user info and description.
+ */
+- (void) didFinishCaptchaRequestWithError: (NSError*) err;
+
+
 @end

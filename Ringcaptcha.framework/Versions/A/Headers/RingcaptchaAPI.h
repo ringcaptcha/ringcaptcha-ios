@@ -100,5 +100,7 @@ typedef enum { RCDisplayNavigation, RCDisplayPresentation } RingcaptchaDisplayMo
  */
 - (void) onboardDelegate: (id<RingcaptchaAPIDelegate>) sender;
 
+- (void) getCaptcha: (id<RingcaptchaAPIDelegate>) sender;
+
 
 @end

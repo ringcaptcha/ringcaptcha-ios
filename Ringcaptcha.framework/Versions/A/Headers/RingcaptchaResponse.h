@@ -108,8 +108,13 @@
 /** Current client features **/
 @property (strong, nonatomic) NSString* features;
 
+/** Current enabled countries, empty if ALL **/
 @property (strong, nonatomic) NSString* countries;
 
+/** Phone Numbers that match the attribution of the onboarding device **/
 @property (strong, nonatomic) NSArray* numbers;
+
+/** Referer URL where the user input the phone number to receive the code **/
+@property (strong, nonatomic) NSString* referer;
 
 @end

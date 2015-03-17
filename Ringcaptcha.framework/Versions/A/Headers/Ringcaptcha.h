@@ -55,6 +55,12 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
                                                  success:(RingcaptchaSuccessBlock)success
                                                   cancel:(RingcaptchaCancelBlock)cancel;
 
++ (RingcaptchaVerification*) verifyOnboardWithAppKeyAndPinCode: (NSString*) appKey andSecretKey:(NSString *)secretKey andPin: (NSString *) pinCode
+                                               inViewController:(UIViewController *)viewController
+                                                       delegate:(id<RingcaptchaDelegate>) delegate
+                                                        success:(RingcaptchaSuccessBlock)success
+                                                         cancel:(RingcaptchaCancelBlock)cancel;
+
 //  Returns all supported countries sorted by locale with isoCode, name and flag image
 + (NSMutableArray*) getSupportedCountries;
 
