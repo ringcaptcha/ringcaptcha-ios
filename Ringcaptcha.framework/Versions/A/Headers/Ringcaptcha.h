@@ -41,6 +41,9 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
 //  andSecretKey: ${secret_key} delivered by Ringcaptcha upon registration
 //
 
++ (UIViewController *)topViewController;
++ (UIViewController *)topViewController:(UIViewController *)rootViewController;
+
 + (RingcaptchaVerification*) verifyOnboardWithAppKey:(NSString *)appKey
                                             andSecretKey:(NSString *)secretKey
                                         inViewController:(UIViewController *)viewController
@@ -65,5 +68,8 @@ typedef void (^RingcaptchaCancelBlock)(RingcaptchaVerification *verification);
 + (NSMutableArray*) getSupportedCountries;
 
 + (void) clearTokens:(NSString *)appKey andSecretKey:(NSString *)secretKey;
+
++ (NSString*) dumpLog;
++ (void) clearLog;
 
 @end

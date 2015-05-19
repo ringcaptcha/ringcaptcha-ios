@@ -1,3 +1,9 @@
+Changes with version 1.8					19 May 2015
+
+Added possibility to retrieve logs for app capture
+Fixed support for iphone 6+
+Fixed conflict when importing libphonenumer manually in the app
+
 Changes with version 1.7					31 March 2015
 
 Using Size Classes for iOS 8 and auto-layout
