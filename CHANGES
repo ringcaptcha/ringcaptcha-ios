@@ -1,3 +1,7 @@
+Changes with version 1.8.2					27 May 2015
+
+Fixed SIM card country automatic selection
+
 Changes with version 1.8.1					25 May 2015
 
 Fixed conflict when importing libphonenumer manually in the app
