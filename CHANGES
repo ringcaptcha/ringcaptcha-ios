@@ -1,3 +1,7 @@
+Changes with version 1.8.3					29 May 2015
+
+Fixed logging bug in simulator at load time
+
 Changes with version 1.8.2					27 May 2015
 
 Fixed SIM card country automatic selection
