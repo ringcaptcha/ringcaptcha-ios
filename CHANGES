@@ -1,3 +1,7 @@
+Changes with version 1.8.4					22 Jun 2015
+
+Preserving nav bar visibility after process ends
+
 Changes with version 1.8.3					29 May 2015
 
 Fixed logging bug in simulator at load time
