@@ -15,6 +15,7 @@
 		01EA9EBC1AA095E900115AC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01EA9EBA1AA095E900115AC5 /* LaunchScreen.xib */; };
 		01EA9EC81AA095E900115AC5 /* ExampleRingcaptchaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EA9EC71AA095E900115AC5 /* ExampleRingcaptchaTests.m */; };
 		3910550A0F7302C0747B777F /* libPods-ExampleRingcaptcha.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0229884150EDAB36338E2540 /* libPods-ExampleRingcaptcha.a */; };
+		AC7F00CE1DAE208900AA542C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7F00CD1DAE208900AA542C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0229884150EDAB36338E2540 /* libPods-ExampleRingcaptcha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleRingcaptcha.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BBBE98E80CBC7833FF70CE /* Pods-ExampleRingcaptcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleRingcaptcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleRingcaptcha/Pods-ExampleRingcaptcha.release.xcconfig"; sourceTree = "<group>"; };
 		AC698222C4B3EC2388921921 /* Pods-ExampleRingcaptcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleRingcaptcha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleRingcaptcha/Pods-ExampleRingcaptcha.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7F00CD1DAE208900AA542C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7F00CE1DAE208900AA542C /* SystemConfiguration.framework in Frameworks */,
 				3910550A0F7302C0747B777F /* libPods-ExampleRingcaptcha.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 		430328988710DD17F9B56E85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC7F00CD1DAE208900AA542C /* SystemConfiguration.framework */,
 				0229884150EDAB36338E2540 /* libPods-ExampleRingcaptcha.a */,
 			);
 			name = Frameworks;
