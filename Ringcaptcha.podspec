@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Ringcaptcha"
-  s.version      = "1.8.4"
+  s.version      = "1.8.5"
   s.summary      = "RingCaptcha, the fastest way to onboard verified users into any app."
 
   s.description  = <<-DESC
