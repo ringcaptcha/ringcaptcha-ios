@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'Ringcaptcha.framework'
   
-  s.ios.framework    = 'CoreTelephony', 'Ringcaptcha'
+  s.ios.framework    = 'CoreTelephony', 'SystemConfiguration', 'Ringcaptcha'
   s.ios.deployment_target = "8.0"
   s.requires_arc = true
 
